@@ -1,0 +1,18 @@
+<div class="max-w-md">
+  <p-inputgroup>
+    <input
+      pInputText
+      placeholder="Search contacts..."
+      [value]="searchTerm()"
+      (input)="onSearchChange($event)"
+    />
+    <p-inputgroup-addon>
+      <p-button
+        icon="pi pi-search"
+        severity="secondary"
+        variant="text"
+        (click)="doSearch($event)"
+      />
+    </p-inputgroup-addon>
+  </p-inputgroup>
+</div>
